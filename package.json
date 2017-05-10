@@ -3,26 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
-  "dependencies": {
-    "quill": "^1.2.4",
-    "quill-delta": "^3.5.0",
-    "ws": "^2.3.1"
-  },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
-    "webpack": "^2.4.1",
+    "html-loader": "^0.4.5",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.3.2",
+    "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "build": "webpack",
-    "start": "webpack-dev-server --inline",
-    "buildServer": "babel server -d lib",
-    "watchServer": "babel server -d lib --watch"
+    "start": "webpack-dev-server --inline"
   },
   "author": "",
   "license": "ISC"
